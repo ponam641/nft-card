@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-container{
+    background-color: hsl(216, 50%, 16%);
+    padding: 5%;
+    border-radius: 1em;
+}
+
+.top-img{
+    border-radius: 1em;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.view-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(178, 100%, 50%, 50%);
+    width: 100%;
+    opacity: 1;
+    height: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    visibility: hidden;
+}
+.top-img:hover .view-icon {
+    visibility: visible;
+}
+
+h1{
+    padding: 4% 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+h1:hover{
+    color:aqua;
+    cursor: pointer;
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    border: -6px;
+}
+
+.eth span{
+    color: aqua;
+    font-weight: 700;
+}
+
+.clock span {
+    color: hsl(215, 51%, 70%);
+}
+
+.bottom{
+    margin-top: 20px;
+}
+.bottom img{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.bottom span{
+    padding: 0 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+span a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+}
+
+span a:hover{
+    color: aqua;
+}
